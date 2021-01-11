@@ -16,6 +16,11 @@ def filter_colors(x):
     for content in x:
         if x["sexy"] == True:
             return x["label"]
+def generate_li(x):
+    for i in x:
+        return "<li>" + x[i] + "</li>"
 
 sexy_colors = list(filter(filter_colors, all_colors))
-print(sexy_colors)
+generate_html = list(map(generate_li, sexy_colors))
+
+print(generate_html)
