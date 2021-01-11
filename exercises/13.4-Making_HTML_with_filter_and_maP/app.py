@@ -23,4 +23,7 @@ def generate_li(x):
 sexy_colors = list(filter(filter_colors, all_colors))
 generate_html = list(map(generate_li, sexy_colors))
 
-print(generate_html)
+new_html = ""
+for i in range(0, len(generate_html)):
+    new_html = new_html + generate_html[i]
+print(new_html)
