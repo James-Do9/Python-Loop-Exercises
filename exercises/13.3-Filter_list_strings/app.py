@@ -7,3 +7,9 @@ names = ['Liam','Emma','Noah','Olivia','William','Ava','James','Isabella','Logan
 
 
 #Your code go here:
+def check_name(x):
+    for content in x:
+        if "am" in x:
+            return x
+new_list = list(filter(check_name, names))
+print(new_list)

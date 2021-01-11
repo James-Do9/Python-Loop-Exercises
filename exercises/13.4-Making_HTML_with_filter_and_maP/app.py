@@ -10,3 +10,12 @@ all_colors = [
 
 #Your code go here:
 
+#def generate_li(x):
+    #pass
+def filter_colors(x):
+    for content in x:
+        if x["sexy"] == True:
+            return x["label"]
+
+sexy_colors = list(filter(filter_colors, all_colors))
+print(sexy_colors)

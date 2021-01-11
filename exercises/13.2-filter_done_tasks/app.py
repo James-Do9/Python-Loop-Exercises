@@ -12,4 +12,19 @@ tasks = [
 
 
 #Your code go here:
+def my_function(x):
+    for content in x:
+        if x["done"] == True:
+            return content
 
+new_list = list(filter(my_function, tasks))
+
+print(new_list)
+
+
+
+"""done_list = []          one solution
+for content in tasks:
+    if content["done"] == True:
+        done_list.append(content)
+print(done_list)"""

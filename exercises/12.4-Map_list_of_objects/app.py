@@ -8,7 +8,8 @@ people = [
 	{ "name": 'Dylan', "birthDate": datetime.datetime(1999,12,14) },
 	{ "name": 'Steve', "birthDate": datetime.datetime(2003,4,24) }
 ]
-
+age_list = []
+details_list = []
 
 def calculateAge(birthDate):
     today = datetime.date.today()
@@ -16,5 +17,13 @@ def calculateAge(birthDate):
     return age
 
 name_list = list(map(lambda person:  person["name"] , people))
-print(name_list)
+
+for content in people:
+    age_list.append(content["birthDate"]) #Creates a list with the datetime.datetime 
+
+new_age_list = list(map(calculateAge, age_list)) #Maps through the calculateAge with the age_list array and returns an array with the actual ages
+
+for i in range(0, len(people)):
+    details_list.append("Hello, my name is " + str(name_list[i]) + " and I am " + str(new_age_list[i]) + " years old")
+print(details_list)
 
