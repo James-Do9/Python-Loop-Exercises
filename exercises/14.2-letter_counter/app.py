@@ -5,6 +5,6 @@ par = "Lorem ipsum dolor sit amet consectetur adipiscing elit Curabitur eget bib
 counts = {}
 #your code go here:
 for i in ascii_lowercase:
-    counts.update({i : str(par.count(i))})
+    if par.count(i) != 0:
+        counts.update({i : str(par.count(i))})
 print(counts)
-

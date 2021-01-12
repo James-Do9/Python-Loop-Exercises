@@ -506,7 +506,7 @@
         {
             "slug": "15.1-Matrix_Builder",
             "title": "15.1-Matrix_Builder",
-            "done": false,
+            "done": true,
             "path": "exercises/15.1-Matrix_Builder",
             "translations": [
                 "es",
